@@ -3,538 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - PeauTrace</title>
-    <meta name="description" content="Read the terms of service for using the PeauTrace app.">
-    
-    <!-- Favicon -->
+    <title>Terms of service: Skincare Daily</title>
+    <meta name="description" content="The terms for using the Skincare Daily app, including subscriptions and the Apple EULA.">
+    <meta name="theme-color" content="#FAF7F2">
+    <link rel="canonical" href="https://www.peautrace.com/terms/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skincare Daily">
+    <meta property="og:title" content="Terms of service: Skincare Daily">
+    <meta property="og:description" content="The terms for using the Skincare Daily app, including subscriptions and the Apple EULA.">
+    <meta property="og:url" content="https://www.peautrace.com/terms/">
+    <meta property="og:image" content="https://www.peautrace.com/assets/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="../css/style.css">
-    
-    <!-- Tailwind Config -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: {
-                            50: '#FFF6F0',
-                            100: '#F9E6F2',
-                            200: '#E6C2D6',
-                            300: '#D4A5C0',
-                            400: '#C288AA',
-                            500: '#B85C8A',
-                            600: '#9D4D74',
-                            700: '#823E5E',
-                            800: '#672F48',
-                            900: '#4C2032',
-                        },
-                        coral: {
-                            DEFAULT: '#FF7F87',
-                            light: '#FFB3B8',
-                            dark: '#FF4C56',
-                        },
-                        mint: {
-                            DEFAULT: '#CFFFE5',
-                            light: '#E8FFE8',
-                            dark: '#9FFFC9',
-                        },
-                        lavender: {
-                            DEFAULT: '#E6D8FF',
-                            light: '#F0E8FF',
-                            dark: '#D4C2FF',
-                        },
-                        cream: '#FFF6F0',
-                        gold: '#FFD700',
+                        canvas: '#FAF7F2', sunk: '#F3EEE6', line: '#E6DED3',
+                        ink: '#1F2A2A', muted: '#66706F', faint: '#9AA2A0',
+                        primary: { DEFAULT: '#2F7F7A', deep: '#1F5F5B', soft: '#E3F1EF' },
+                        accent: { DEFAULT: '#C8836B', soft: '#F6EAE4' },
                     },
                     fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        display: ['Playfair Display', 'serif'],
+                        display: ['Fraunces', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
                     },
-                }
-            }
-        }
+                },
+            },
+        };
     </script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="font-sans antialiased overflow-x-hidden animated-bg">
-    
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm" x-data="{ mobileMenuOpen: false }">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="../index.html" class="flex items-center space-x-3 group">
-                    <img src="../assets/images/logo.png" alt="PeauTrace Logo" class="h-10 w-10 transition-transform group-hover:scale-110">
-                    <span class="text-2xl font-display font-bold bg-gradient-to-r from-primary-500 to-coral bg-clip-text text-transparent">
-                        PeauTrace
-                    </span>
+<body class="bg-canvas text-ink font-sans antialiased">
+
+    <header class="sticky top-0 z-40 bg-canvas/90 backdrop-blur border-b border-line/70">
+        <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between" x-data>
+            <a href="../" class="flex items-center gap-2.5" aria-label="Skincare Daily home">
+                <svg class="h-8 w-8" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#2F7F7A"/><path d="M32 13c7 9 13 16 13 24a13 13 0 0 1-26 0c0-8 6-15 13-24z" fill="#FAF7F2"/><path d="M27 38a6 6 0 0 0 6 6" stroke="#2F7F7A" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+                <span class="font-display text-xl font-semibold tracking-tight">Skincare Daily</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="../#how" class="text-sm font-medium text-muted hover:text-ink transition-colors">How it works</a>
+                <a href="../#features" class="text-sm font-medium text-muted hover:text-ink transition-colors">Features</a>
+                <a href="../#pro" class="text-sm font-medium text-muted hover:text-ink transition-colors">Pro</a>
+                <a href="../support/" class="text-sm font-medium text-muted hover:text-ink transition-colors">Support</a>
+                <a href="../#download" class="text-sm font-semibold bg-primary hover:bg-primary-deep text-white rounded-full px-5 py-2.5 transition-colors">Get the app</a>
+            </div>
+            <button id="menu-btn" class="md:hidden p-2 -mr-2" aria-label="Open menu" aria-expanded="false">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+        </nav>
+        <div id="menu" class="md:hidden hidden border-t border-line bg-canvas px-5 pb-5 pt-2 space-y-1">
+            <a href="../#how" class="block py-2 font-medium">How it works</a>
+            <a href="../#features" class="block py-2 font-medium">Features</a>
+            <a href="../#pro" class="block py-2 font-medium">Pro</a>
+            <a href="../support/" class="block py-2 font-medium">Support</a>
+            <a href="../#download" class="block mt-2 text-center font-semibold bg-primary text-white rounded-full px-5 py-3">Get the app</a>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-5 sm:px-8 pt-14">
+        <h1 class="font-display text-5xl font-semibold mb-8">Terms of service</h1>
+        <article class="legal"><p><strong>Effective Date:</strong> November 2025<br />
+<strong>Last Updated:</strong> November 2025</p>
+<h2>1. Acceptance of Terms</h2>
+<p>By downloading, installing, or using the Skincare Daily mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+<h2>2. Description of Service</h2>
+<p>Skincare Daily is a skincare tracking and management application that helps users:</p>
+<p>• Track their skincare routines and products<br />
+• Monitor skin progress and changes<br />
+• Receive personalized skincare recommendations<br />
+• Set reminders for skincare routines<br />
+• Store product information and reviews  </p>
+<p>We reserve the right to modify, suspend, or discontinue any aspect of the Service at any time.</p>
+<h2>3. User Accounts</h2>
+<p>To use certain features of the App, you must create an account. You are responsible for:</p>
+<p>• Providing accurate and complete information<br />
+• Maintaining the security of your account credentials<br />
+• All activities that occur under your account<br />
+• Notifying us immediately of any unauthorized use  </p>
+<p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+<h2>4. User Content</h2>
+<p>You retain ownership of content you create, upload, or share through the App ("User Content"). By using the Service, you grant us a limited, non-exclusive license to:</p>
+<p>• Store and process your User Content<br />
+• Display your User Content within the App<br />
+• Use anonymized data for app improvement  </p>
+<p>You are responsible for ensuring your User Content does not violate any laws or third-party rights.</p>
+<h2>5. Prohibited Uses</h2>
+<p>You may not use the App to:</p>
+<p>• Violate any applicable laws or regulations<br />
+• Infringe on intellectual property rights<br />
+• Transmit harmful or malicious code<br />
+• Attempt to gain unauthorized access to our systems<br />
+• Use the App for commercial purposes without permission<br />
+• Share false or misleading information<br />
+• Harass, abuse, or harm other users  </p>
+<h2>6. Medical Disclaimer</h2>
+<p><strong>IMPORTANT:</strong> Skincare Daily is not a medical device or diagnostic tool. The App provides general skincare information and tracking features only. Always consult with a qualified dermatologist or healthcare professional for medical advice, diagnosis, or treatment. We are not responsible for any health decisions made based on information from the App.</p>
+<h2>7. Privacy and Data Protection</h2>
+<p>We are committed to protecting your privacy. Our Privacy Policy explains how we collect, use, and protect your information.</p>
+<p>For users in the European Economic Area (EEA), we comply with the General Data Protection Regulation (GDPR). You have specific rights regarding your personal data, including the right to access, rectify, erase, and port your data.</p>
+<p>For California residents, we comply with the California Consumer Privacy Act (CCPA). You have the right to know what personal information we collect and how we use it.</p>
+<p>By using the App, you consent to the collection and use of information in accordance with our Privacy Policy.</p>
+<h2>8. Intellectual Property</h2>
+<p>The App and its original content, features, and functionality are owned by Skincare Daily and are protected by international copyright, trademark, and other intellectual property laws. You may not:</p>
+<p>• Copy, modify, or distribute our content<br />
+• Reverse engineer or attempt to extract source code<br />
+• Use our trademarks without permission<br />
+• Create derivative works based on our content  </p>
+<h2>9. Disclaimers and Limitations</h2>
+<p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+<p>• MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE<br />
+• ACCURACY, RELIABILITY, OR COMPLETENESS OF CONTENT<br />
+• UNINTERRUPTED OR ERROR-FREE OPERATION<br />
+• SECURITY OR FREEDOM FROM VIRUSES  </p>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES.</p>
+<h2>10. Termination</h2>
+<p>We may terminate or suspend your account and access to the App immediately, without prior notice, for any reason, including if you breach these Terms. Upon termination:</p>
+<p>• Your right to use the App ceases immediately<br />
+• We may delete your account and data<br />
+• You remain liable for all amounts due<br />
+• Certain provisions of these Terms survive termination  </p>
+<h2>11. Governing Law</h2>
+<p>These Terms are governed by and construed in accordance with the laws of Kannur, Kerala, India, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the App will be subject to the exclusive jurisdiction of the courts in Kannur, Kerala, India.</p>
+<h2>12. Changes to Terms</h2>
+<p>We reserve the right to modify these Terms at any time. We will notify users of material changes through the App or by email. Your continued use of the App after such modifications constitutes acceptance of the updated Terms.</p>
+<h2>13. Contact Information</h2>
+<p>If you have any questions about these Terms, please contact us at:</p>
+<p><strong>Developer Name:</strong> ScreenTrace Technologies (Skincare Daily)<br />
+<strong>Email:</strong> <a href="mailto:support@peautrace.com">support@peautrace.com</a></p>
+<p>We will respond to your inquiry within 2-3 business days.</p>
+<p>Any questions, complaints or claims with respect to the Licensed Application should be directed to the contact information above.</p>
+<h2>14. Apple-Specific Terms (iOS App Store)</h2>
+<h3>14.1 Acknowledgement</h3>
+<p>This End-User License Agreement ("EULA") is concluded between you and ScreenTrace Technologies (Skincare Daily), not with Apple, Inc. ("Apple"). Skincare Daily, not Apple, is solely responsible for the Licensed Application and the content thereof. This EULA may not provide for usage rules for the Licensed Application that are in conflict with the Apple Media Services Terms and Conditions as of the Effective Date.</p>
+<h3>14.2 Scope of License</h3>
+<p>The license granted to you for the Licensed Application is limited to a non-transferable license to use the Licensed Application on any Apple-branded products that you own or control and as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions, except that such Licensed Application may be accessed and used by other accounts associated with you via Family Sharing or volume purchasing.</p>
+<h3>14.3 Maintenance and Support</h3>
+<p>Skincare Daily is solely responsible for providing any maintenance and support services with respect to the Licensed Application, as specified in this EULA, or as required under applicable law. You and Skincare Daily acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the Licensed Application.</p>
+<h3>14.4 Warranty</h3>
+<p>Skincare Daily is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed. In the event of any failure of the Licensed Application to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the Licensed Application to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the Licensed Application, and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be Skincare Daily's sole responsibility.</p>
+<h3>14.5 Product Claims</h3>
+<p>You and Skincare Daily acknowledge that Skincare Daily, not Apple, is responsible for addressing any claims of you or any third party relating to the Licensed Application or your possession and/or use of that Licensed Application, including, but not limited to: (i) product liability claims; (ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection, privacy, or similar legislation, including in connection with the Licensed Application's use of the HealthKit and HomeKit frameworks. This EULA may not limit Skincare Daily's liability to you beyond what is permitted by applicable law.</p>
+<h3>14.6 Intellectual Property Rights</h3>
+<p>You and Skincare Daily acknowledge that, in the event of any third party claim that the Licensed Application or your possession and use of that Licensed Application infringes that third party's intellectual property rights, Skincare Daily, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim.</p>
+<h3>14.7 Legal Compliance</h3>
+<p>You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</p>
+<h3>14.8 Developer Information</h3>
+<p>The Licensed Application is provided by ScreenTrace Technologies (Skincare Daily). Any questions, complaints or claims with respect to the Licensed Application should be directed to <a href="mailto:support@peautrace.com">support@peautrace.com</a>.</p>
+<h3>14.9 Third Party Terms</h3>
+<p>You must comply with applicable third party terms of agreement when using the Licensed Application, including any wireless data service agreement.</p>
+<h3>14.10 Third Party Beneficiary</h3>
+<p>You and Skincare Daily acknowledge and agree that Apple, and Apple's subsidiaries, are third party beneficiaries of this EULA, and that, upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third party beneficiary thereof.</p>
+<h2>15. Google Play Store Terms</h2>
+<p>This application is distributed through Google Play Store. By downloading and using this application, you agree to comply with Google Play Store's Terms of Service. Google Play Store is not responsible for the application or its content.</p>
+<hr />
+<h2>Agreement</h2>
+<p>By using Skincare Daily, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
+<hr />
+<p><strong>Skincare Daily</strong> - Find out what's breaking you out.</p></article>
+    </main>
+
+    <footer class="border-t border-line mt-24">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 py-12 grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+            <div>
+                <a href="../" class="flex items-center gap-2.5">
+                    <svg class="h-8 w-8" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#2F7F7A"/><path d="M32 13c7 9 13 16 13 24a13 13 0 0 1-26 0c0-8 6-15 13-24z" fill="#FAF7F2"/><path d="M27 38a6 6 0 0 0 6 6" stroke="#2F7F7A" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+                    <span class="font-display text-xl font-semibold">Skincare Daily</span>
                 </a>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html#features" class="text-gray-700 hover:text-coral transition-colors font-medium">Features</a>
-                    <a href="../index.html#download" class="text-gray-700 hover:text-coral transition-colors font-medium">Download</a>
-                    <a href="../privacy/" class="text-gray-700 hover:text-coral transition-colors font-medium">Privacy</a>
-                    <a href="../terms/" class="text-coral transition-colors font-medium">Terms</a>
-                    <a href="../support/" class="text-gray-700 hover:text-coral transition-colors font-medium">Support</a>
-                </div>
-                
-                <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
+                <p class="text-muted mt-3 max-w-sm">Find out what's breaking you out. The 10-second daily skin diary.</p>
             </div>
-            
-            <div x-show="mobileMenuOpen" x-transition class="md:hidden pb-4">
-                <div class="flex flex-col space-y-3">
-                    <a href="../index.html#features" class="text-gray-700 hover:text-coral transition-colors font-medium py-2">Features</a>
-                    <a href="../index.html#download" class="text-gray-700 hover:text-coral transition-colors font-medium py-2">Download</a>
-                    <a href="../privacy/" class="text-gray-700 hover:text-coral transition-colors font-medium py-2">Privacy</a>
-                    <a href="../terms/" class="text-coral transition-colors font-medium py-2">Terms</a>
-                    <a href="../support/" class="text-gray-700 hover:text-coral transition-colors font-medium py-2">Support</a>
-                </div>
+            <div>
+                <h3 class="text-sm font-semibold mb-3">App</h3>
+                <ul class="space-y-2 text-muted">
+                    <li><a class="hover:text-ink" href="https://play.google.com/store/apps/details?id=com.tracescript.peautrace" target="_blank" rel="noopener">Google Play</a></li>
+                    <li><a class="hover:text-ink" href="https://apps.apple.com/app/id6754798890" target="_blank" rel="noopener">App Store</a></li>
+                    <li><a class="hover:text-ink" href="../support/">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold mb-3">Legal</h3>
+                <ul class="space-y-2 text-muted">
+                    <li><a class="hover:text-ink" href="../privacy/">Privacy policy</a></li>
+                    <li><a class="hover:text-ink" href="../terms/">Terms of service</a></li>
+                    <li><a class="hover:text-ink" href="../support/#delete-account">Delete your account</a></li>
+                </ul>
             </div>
         </div>
-    </nav>
-    
-    <!-- Hero Section -->
-    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-4xl">
-            <div class="text-center" data-aos="fade-up">
-                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-coral to-primary-500 rounded-full mb-6">
-                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                </div>
-                <h1 class="text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4">
-                    Terms of Service
-                </h1>
-                <p class="text-xl text-gray-600 mb-4">
-                    Please Read These Terms Carefully
-                </p>
-                <div class="inline-flex items-center space-x-2 bg-primary-100 px-4 py-2 rounded-full">
-                    <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <span class="text-sm text-gray-700">Last Updated: November 2025</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Content Section -->
-    <section class="pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-4xl">
-            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
-                
-                <!-- Acceptance -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        By downloading, installing, or using the PeauTrace mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.
-                    </p>
-                </div>
-                
-                <!-- Description -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">2. Description of Service</h2>
-                    <p class="text-gray-700 mb-4">PeauTrace is a skincare tracking and management application that helps users:</p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Track their skincare routines and products
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Monitor skin progress and changes
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Receive personalized skincare recommendations
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Set reminders for skincare routines
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Store product information and reviews
-                        </li>
-                    </ul>
-                    <p class="text-gray-600 text-sm mt-4">We reserve the right to modify, suspend, or discontinue any aspect of the Service at any time.</p>
-                </div>
-                
-                <!-- User Accounts -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">3. User Accounts</h2>
-                    <p class="text-gray-700 mb-4">To use certain features of the App, you must create an account. You are responsible for:</p>
-                    <div class="bg-gray-50 p-6 rounded-xl space-y-3">
-                        <p class="text-gray-700">• Providing accurate and complete information</p>
-                        <p class="text-gray-700">• Maintaining the security of your account credentials</p>
-                        <p class="text-gray-700">• All activities that occur under your account</p>
-                        <p class="text-gray-700">• Notifying us immediately of any unauthorized use</p>
-                    </div>
-                </div>
-                
-                <!-- User Content -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">4. User Content</h2>
-                    <p class="text-gray-700 mb-4">You retain ownership of content you create, upload, or share through the App ("User Content"). By using the Service, you grant us a limited, non-exclusive license to:</p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Store and process your User Content
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Display your User Content within the App
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Use anonymized data for app improvement
-                        </li>
-                    </ul>
-                    <p class="text-gray-600 text-sm mt-4">You are responsible for ensuring your User Content does not violate any laws or third-party rights.</p>
-                </div>
-                
-                <!-- Prohibited Uses -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">5. Prohibited Uses</h2>
-                    <p class="text-gray-700 mb-4">You may not use the App to:</p>
-                    <div class="grid md:grid-cols-2 gap-3">
-                        <div class="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-gray-700 text-sm">Violate any applicable laws</span>
-                        </div>
-                        <div class="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-gray-700 text-sm">Infringe on intellectual property</span>
-                        </div>
-                        <div class="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-gray-700 text-sm">Transmit harmful code</span>
-                        </div>
-                        <div class="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-gray-700 text-sm">Gain unauthorized access</span>
-                        </div>
-                        <div class="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-gray-700 text-sm">Use for commercial purposes</span>
-                        </div>
-                        <div class="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="text-gray-700 text-sm">Harass or harm other users</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Medical Disclaimer -->
-                <div class="mb-10 p-6 bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl border-2 border-red-200">
-                    <div class="flex items-start">
-                        <svg class="w-8 h-8 text-red-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                        </svg>
-                        <div>
-                            <h2 class="text-2xl font-display font-bold text-gray-900 mb-3">6. Medical Disclaimer</h2>
-                            <p class="text-gray-700 font-semibold mb-2">IMPORTANT:</p>
-                            <p class="text-gray-700 leading-relaxed">
-                                PeauTrace is not a medical device or diagnostic tool. The App provides general skincare information and tracking features only. Always consult with a qualified dermatologist or healthcare professional for medical advice, diagnosis, or treatment. We are not responsible for any health decisions made based on information from the App.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Privacy and Data Protection -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">7. Privacy and Data Protection</h2>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        We are committed to protecting your privacy. Our Privacy Policy explains how we collect, use, and protect your information.
-                    </p>
-                    <div class="bg-gray-50 p-6 rounded-xl space-y-4">
-                        <div>
-                            <p class="text-gray-700 font-semibold mb-2">For users in the European Economic Area (EEA):</p>
-                            <p class="text-gray-700 text-sm">
-                                We comply with the General Data Protection Regulation (GDPR). You have specific rights regarding your personal data, including the right to access, rectify, erase, and port your data.
-                            </p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-semibold mb-2">For California residents:</p>
-                            <p class="text-gray-700 text-sm">
-                                We comply with the California Consumer Privacy Act (CCPA). You have the right to know what personal information we collect and how we use it.
-                            </p>
-                        </div>
-                        <p class="text-gray-700 text-sm mt-4">
-                            By using the App, you consent to the collection and use of information in accordance with our Privacy Policy.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Intellectual Property -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">8. Intellectual Property</h2>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        The App and its original content, features, and functionality are owned by PeauTrace and are protected by international copyright, trademark, and other intellectual property laws.
-                    </p>
-                </div>
-                
-                <!-- Limitation -->
-                <div class="mb-10 p-6 bg-gray-50 rounded-xl">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">9. Limitation of Liability</h2>
-                    <p class="text-gray-700 leading-relaxed uppercase text-sm font-semibold">
-                        THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES.
-                    </p>
-                </div>
-                
-                <!-- Termination -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">10. Termination</h2>
-                    <p class="text-gray-700 leading-relaxed mb-4">We may terminate or suspend your account and access to the App immediately, without prior notice, for any reason, including if you breach these Terms. Upon termination:</p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            Your right to use the App ceases immediately
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            We may delete your account and data
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            You remain liable for all amounts due
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-coral mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
-                            </svg>
-                            Certain provisions of these Terms survive termination
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Governing Law -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">11. Governing Law</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        These Terms are governed by and construed in accordance with the laws of Kannur, Kerala, India, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the App will be subject to the exclusive jurisdiction of the courts in Kannur, Kerala, India.
-                    </p>
-                </div>
-                
-                <!-- Changes to Terms -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">12. Changes to Terms</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        We reserve the right to modify these Terms at any time. We will notify users of material changes through the App or by email. Your continued use of the App after such modifications constitutes acceptance of the updated Terms.
-                    </p>
-                </div>
-                
-                <!-- Contact Information -->
-                <div class="mb-10">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">13. Contact Information</h2>
-                    <p class="text-gray-700 leading-relaxed mb-4">If you have any questions about these Terms, please contact us at:</p>
-                    <div class="bg-gray-50 p-6 rounded-xl">
-                        <p class="text-gray-700 mb-2"><strong>Developer Name:</strong> ScreenTrace Technologies (PeauTrace)</p>
-                        <p class="text-gray-700 mb-2"><strong>Email:</strong> <a href="mailto:support@peautrace.com" class="text-coral hover:underline">support@peautrace.com</a></p>
-                        <p class="text-gray-600 text-sm mt-4">We will respond to your inquiry within 2-3 business days.</p>
-                        <p class="text-gray-600 text-sm mt-2">Any questions, complaints or claims with respect to the Licensed Application should be directed to the contact information above.</p>
-                    </div>
-                </div>
-                
-                <!-- Apple-Specific Terms -->
-                <div class="mb-10 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl border-2 border-blue-200">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-6">14. Apple-Specific Terms (iOS App Store)</h2>
-                    
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.1 Acknowledgement</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                This End-User License Agreement ("EULA") is concluded between you and ScreenTrace Technologies (PeauTrace), not with Apple, Inc. ("Apple"). PeauTrace, not Apple, is solely responsible for the Licensed Application and the content thereof. This EULA may not provide for usage rules for the Licensed Application that are in conflict with the Apple Media Services Terms and Conditions as of the Effective Date.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.2 Scope of License</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                The license granted to you for the Licensed Application is limited to a non-transferable license to use the Licensed Application on any Apple-branded products that you own or control and as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions, except that such Licensed Application may be accessed and used by other accounts associated with you via Family Sharing or volume purchasing.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.3 Maintenance and Support</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                PeauTrace is solely responsible for providing any maintenance and support services with respect to the Licensed Application, as specified in this EULA, or as required under applicable law. You and PeauTrace acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the Licensed Application.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.4 Warranty</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                PeauTrace is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed. In the event of any failure of the Licensed Application to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the Licensed Application to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the Licensed Application, and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be PeauTrace's sole responsibility.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.5 Product Claims</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                You and PeauTrace acknowledge that PeauTrace, not Apple, is responsible for addressing any claims of you or any third party relating to the Licensed Application or your possession and/or use of that Licensed Application, including, but not limited to: (i) product liability claims; (ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection, privacy, or similar legislation, including in connection with the Licensed Application's use of the HealthKit and HomeKit frameworks. This EULA may not limit PeauTrace's liability to you beyond what is permitted by applicable law.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.6 Intellectual Property Rights</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                You and PeauTrace acknowledge that, in the event of any third party claim that the Licensed Application or your possession and use of that Licensed Application infringes that third party's intellectual property rights, PeauTrace, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.7 Legal Compliance</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.8 Developer Information</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                The Licensed Application is provided by ScreenTrace Technologies (PeauTrace). Any questions, complaints or claims with respect to the Licensed Application should be directed to <a href="mailto:support@peautrace.com" class="text-coral hover:underline">support@peautrace.com</a>.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.9 Third Party Terms</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                You must comply with applicable third party terms of agreement when using the Licensed Application, including any wireless data service agreement.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">14.10 Third Party Beneficiary</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                You and PeauTrace acknowledge and agree that Apple, and Apple's subsidiaries, are third party beneficiaries of this EULA, and that, upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third party beneficiary thereof.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Google Play Store Terms -->
-                <div class="mb-10 p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl border-2 border-green-200">
-                    <h2 class="text-2xl font-display font-bold text-gray-900 mb-4">15. Google Play Store Terms</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        This application is distributed through Google Play Store. By downloading and using this application, you agree to comply with Google Play Store's Terms of Service. Google Play Store is not responsible for the application or its content.
-                    </p>
-                </div>
-                
-                <!-- Agreement Box -->
-                <div class="mt-12 p-8 bg-gradient-to-r from-coral/10 to-primary-500/10 rounded-2xl border-2 border-coral/20">
-                    <div class="flex items-start">
-                        <svg class="w-8 h-8 text-coral mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <div>
-                            <h2 class="text-2xl font-display font-bold text-gray-900 mb-3">Agreement</h2>
-                            <p class="text-gray-700 leading-relaxed">
-                                By using PeauTrace, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you have any questions, please contact us at <a href="mailto:support@peautrace.com" class="text-coral hover:underline font-semibold">support@peautrace.com</a>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div class="md:col-span-2">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <img src="../assets/images/logo.png" alt="PeauTrace Logo" class="h-10 w-10">
-                        <span class="text-2xl font-display font-bold">PeauTrace</span>
-                    </div>
-                    <p class="text-gray-400 mb-4">
-                        Trace your beauty. Track your glow.<br>
-                        Your personal skincare companion for building healthy beauty habits.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="../index.html#features" class="text-gray-400 hover:text-coral transition-colors">Features</a></li>
-                        <li><a href="../index.html#download" class="text-gray-400 hover:text-coral transition-colors">Download</a></li>
-                        <li><a href="../support/" class="text-gray-400 hover:text-coral transition-colors">Support</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Legal</h4>
-                    <ul class="space-y-2">
-                        <li><a href="../privacy/" class="text-gray-400 hover:text-coral transition-colors">Privacy Policy</a></li>
-                        <li><a href="../terms/" class="text-coral transition-colors">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>© 2025 ScreenTrace Technologies. All rights reserved.</p>
-            </div>
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 pb-10 text-sm text-faint flex flex-col sm:flex-row gap-2 sm:justify-between">
+            <p>&copy; 2026 ScreenTrace Technologies. Skincare Daily is a wellness diary, not a medical device.</p>
+            <p><a class="hover:text-ink" href="mailto:support@peautrace.com">support@peautrace.com</a></p>
         </div>
     </footer>
-    
-    <!-- AOS Init -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>
-
